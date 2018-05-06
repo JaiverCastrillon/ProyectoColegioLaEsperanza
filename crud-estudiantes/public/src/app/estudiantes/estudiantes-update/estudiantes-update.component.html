@@ -1,0 +1,16 @@
+<h3>Estudiantes update</h3>
+
+<form (submit)="update()">
+  <input type="number" name= "documento" [(ngModel)]="updateEstudiante.documento"> 
+  <input type="text" name= "nombre" [(ngModel)]="updateEstudiante.nombre"> 
+  <input type="text" name= "apellidos" [(ngModel)]="updateEstudiante.apellidos">
+  <input type="number" name= "grado" [(ngModel)]="updateEstudiante.grado">
+  <input type="text" name= "salon" [(ngModel)]="updateEstudiante.salon">
+  <input type="text" name= "correo" [(ngModel)]="updateEstudiante.correo">
+  <input type="number" name= "edad" [(ngModel)]="updateEstudiante.edad">
+  <input type="number" name= "celular" [(ngModel)]="updateEstudiante.celular">
+
+  <button type="submit">
+    Update
+  </button>
+</form>

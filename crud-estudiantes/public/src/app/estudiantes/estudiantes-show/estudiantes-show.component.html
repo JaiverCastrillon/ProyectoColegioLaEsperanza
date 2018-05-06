@@ -1,0 +1,22 @@
+<h3>Estudiantes show component</h3>
+
+<div *ngFor="let estudiante of estudiantes">
+  {{estudiante._id}} - {{estudiante.documento}} - {{estudiante.nombre}} - {{estudiante.apellidos}} -
+  {{estudiante.grado}} - {{estudiante.salon}} - {{estudiante.correo}} - {{estudiante.edad}} - 
+  {{estudiante.celular}}
+
+  <button (click)="destroy(estudiante)">
+    Delete
+  </button>
+
+  <button (click)="estudiante.editable = !estudiante.editable">
+    Update
+  </button>
+
+  <app-estudiantes-update
+  *ngIf="estudiante.editable"
+  [estudiante]="estudiante"
+  (updateEstudianteEvent)="update($event)"
+  ></app-estudiantes-update>
+
+</div>

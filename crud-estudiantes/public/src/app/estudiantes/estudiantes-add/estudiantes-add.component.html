@@ -1,0 +1,16 @@
+<h3>Estudiantes add component</h3>
+
+<form (submit)="create()">
+  <input type="number" name= "documento" [(ngModel)]="newEstudiante.documento">
+  <input type="text" name= "nombre" [(ngModel)]="newEstudiante.nombre"> 
+  <input type="text" name= "apellidos" [(ngModel)]="newEstudiante.apellidos">
+  <input type="number" name= "grado" [(ngModel)]="newEstudiante.grado">
+  <input type="text" name= "salon" [(ngModel)]="newEstudiante.salon">
+  <input type="text" name= "correo" [(ngModel)]="newEstudiante.correo">
+  <input type="number" name= "edad" [(ngModel)]="newEstudiante.edad">
+  <input type="number" name= "celular" [(ngModel)]="newEstudiante.celular">
+
+  <button type="submit">
+    Send
+  </button>
+</form>

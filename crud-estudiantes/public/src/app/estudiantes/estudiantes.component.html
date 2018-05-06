@@ -1,0 +1,13 @@
+<h1>Estudiantes Main Component</h1>
+
+<pre>
+    {{ estudiantes | json }}
+</pre>
+
+<app-estudiantes-add (createNewEstudianteEvent)="create($event)"></app-estudiantes-add>
+
+<app-estudiantes-show
+[estudiantes]="estudiantes"
+(destroyEstudianteEvent)="destroy($event)"
+(updateEstudianteEvent)="update($event)"
+></app-estudiantes-show>
