@@ -1,0 +1,14 @@
+<h3>Padre new component</h3>
+
+<form (submit)="create()">
+        <input type="number" name= "cedula" [(ngModel)]="newPadre.cedula">
+        <input type="text" name= "nombre" [(ngModel)]="newPadre.nombre"> 
+        <input type="text" name= "apellidos" [(ngModel)]="newPadre.apellidos">
+        <input type="number" name= "id_hijo" [(ngModel)]="newPadre.id_hijo">
+        <input type="number" name= "telefono" [(ngModel)]="newPadre.telefono">
+        <input type="text" name= "correo" [(ngModel)]="newPadre.correo">
+
+        <button type="submit">
+            Send
+        </button>
+</form>

@@ -1,0 +1,20 @@
+<h3>Padre list component</h3>
+
+<div *ngFor="let padre of padres">
+    {{padre._id}} - {{padre.cedula}} - {{padre.nombre}} - {{padre.apellidos}} -
+    {{padre.id_hijo}} - {{padre.telefono}} - {{padre.correo}} 
+  
+    <button (click)="destroy(padre)">
+      Delete
+    </button>
+  
+    <button (click)="padre.editable = !padre.editable">
+      Update
+    </button>
+  
+    <app-padre-edit 
+    *ngIf="padre.editable"
+    [padre]="padre"
+    (updatePadreEvent)="update($event)"
+    ></app-padre-edit>
+  </div>

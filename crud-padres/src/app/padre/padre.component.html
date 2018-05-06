@@ -1,0 +1,13 @@
+<h1>Padre main component</h1>
+
+<pre>
+  {{padres|json}}
+</pre>
+
+<app-padre-new (createNewPadreEvent)="create($event)"></app-padre-new>
+
+<app-padre-list 
+[padres]="padres"
+(destroyPadreEvent)="destroy($event)"
+(updatePadreEvent)="update($event)"
+></app-padre-list>

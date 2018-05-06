@@ -1,0 +1,14 @@
+<h3>Padre update component</h3>
+
+<form (submit)="update()">
+        <input type="number" name= "cedula" [(ngModel)]="updatePadre.cedula">
+        <input type="text" name= "nombre" [(ngModel)]="updatePadre.nombre"> 
+        <input type="text" name= "apellidos" [(ngModel)]="updatePadre.apellidos">
+        <input type="number" name= "id_hijo" [(ngModel)]="updatePadre.id_hijo">
+        <input type="number" name= "telefono" [(ngModel)]="updatePadre.telefono">
+        <input type="text" name= "correo" [(ngModel)]="updatePadre.correo">
+
+        <button type="submit">
+            Update
+        </button>
+</form>
