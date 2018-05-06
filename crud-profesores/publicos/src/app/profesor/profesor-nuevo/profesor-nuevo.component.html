@@ -1,0 +1,12 @@
+<h3>Componente nuevo profesor</h3>
+
+<form (submit)="crear()">
+  <input type="text" name="nombre" [(ngModel)]="nuevoProfesor.nombre">
+  <input type="text" name="apellido" [(ngModel)]="nuevoProfesor.apellido">
+  <input type="text" name="email" [(ngModel)]="nuevoProfesor.email">
+
+  <button type="submit">
+    Enviar
+  </button>
+
+</form>

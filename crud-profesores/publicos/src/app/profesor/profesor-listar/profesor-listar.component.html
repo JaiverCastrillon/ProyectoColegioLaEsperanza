@@ -1,0 +1,18 @@
+<h3>Componente listar profesores</h3>
+
+<div *ngFor="let profesor of profesores">
+  {{profesor._id}} - {{profesor.nombre}} - {{profesor.apellido}} - {{profesor.email}}
+  <button (click)="eliminar(profesor)">
+    Eliminar
+  </button>
+
+  <button (click)="profesor.editable=!profesor.editable">
+    Editar
+  </button>
+
+  <app-profesor-editar
+    *ngIf="profesor.editable"
+    [profesor]="profesor"
+    (editarProfesorEvent)="editar($event)"
+  ></app-profesor-editar>
+</div>

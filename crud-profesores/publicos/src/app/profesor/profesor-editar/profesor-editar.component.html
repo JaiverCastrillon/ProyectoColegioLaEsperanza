@@ -1,0 +1,18 @@
+<h3>Componente editar profesor</h3> 
+
+<form (submit)="editar()">
+  <div class="form group">
+    <input class="form-control" type="text" name="nombre" [(ngModel)]="editProfesor.nombre">
+  </div>
+  <div class="form group">
+    <input class="form-control" type="text" name="apellido" [(ngModel)]="editProfesor.apellido">
+  </div>
+  <div class="form group">
+    <input class="form-control" type="text" name="email" [(ngModel)]="editProfesor.email">
+  </div>
+  <div class="form group">
+    <button class="success" type="submit">
+      Editar
+    </button>
+  </div>  
+</form>

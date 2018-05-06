@@ -1,4 +1,4 @@
-const express = require('express');
+﻿const express = require('express');
 const path = require('path');
 
 const bodyParser = require('body-parser');
@@ -19,7 +19,7 @@ app.use('/', apiRouter);
 
 
 //Estáticos
-app.use(express.static(path.join(__dirname , 'public/dist')));
+app.use(express.static(path.join(__dirname , 'publicos/dist')));
 
 app.listen(3000, () =>{
     console.log("Servidor corriendo en puerto 3000....")

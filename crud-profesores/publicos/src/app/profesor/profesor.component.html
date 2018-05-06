@@ -1,0 +1,17 @@
+<div class="container">
+    <h1> Profesor componente principal</h1>
+
+    <pre>
+        {{profesores | json}}
+    </pre>
+    
+    <app-profesor-nuevo (crearNuevoProfesorEvent)="crear($event)"></app-profesor-nuevo>
+    
+    <app-profesor-listar 
+        [profesores]="profesores" 
+        (eliminarProfesorEvent)="eliminar($event)"
+        (editarProfesorEvent)="editar($event)"
+        
+    ></app-profesor-listar>
+
+</div>
