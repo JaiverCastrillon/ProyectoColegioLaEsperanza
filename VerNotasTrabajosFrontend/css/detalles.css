@@ -1,0 +1,32 @@
+#titulo{
+    color:#4CAF50 !important;
+    font-style: oblique !important;
+    text-align: center;
+}
+#nota{
+    text-align: right;
+}
+
+.nota{
+    width: 42px; 
+    height: 42px;
+    background-color: transparent;
+}
+.divDetalles{
+    padding: 5%;
+}
+
+.subtitulos{
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.parrafo{
+    text-align: justify;
+}
+
+.atras{
+    background: gray;
+    color: white;
+}
