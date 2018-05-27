@@ -26,8 +26,6 @@ export class ProfesorComponent implements OnInit {
   }
 
   crear(profesor: Profesor){
-    //console.log(profesor);
-    //this.profesores.push(profesor);
     this._servicioProfesor.crear(profesor)   
       .then(status => this.getProfesores())
       .catch(err => console.log(err));
