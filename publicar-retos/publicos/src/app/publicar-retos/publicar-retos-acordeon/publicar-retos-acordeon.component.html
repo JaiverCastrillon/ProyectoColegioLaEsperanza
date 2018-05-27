@@ -1,0 +1,14 @@
+<!--
+    Creacion de los menus desplegables dinamicamente
+-->
+<div *ngFor="let admin of admins" style="width: 25%;color: #444;float:left">
+  <button class="accordion"  (click)="desplegar()">{{admin.first_name}}</button>
+  <div class="panel">
+          <div *ngFor="let admin of admins">
+              <button class="accordion"  (click)="desplegar()"> {{admin.last_name}}</button>
+              <div class="panel">
+                  <p  (click)="prueba()">{{admin.position}}</p>
+              </div>
+          </div>       
+  </div>
+</div>

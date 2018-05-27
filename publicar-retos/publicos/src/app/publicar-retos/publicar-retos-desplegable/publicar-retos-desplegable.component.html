@@ -1,0 +1,14 @@
+<!--
+Creacion de la lista desplegable dinamicamente
+-->
+<div style="width: 70%;float:left;padding-left: 5%">
+  <form>
+      <select [(ngModel)]="selectedOption" name="first">
+          <option *ngFor="let admin of admins">
+              {{admin.first_name}}
+          </option>
+        </select>
+  </form>
+  <p>{{ selectedOption }}</p>
+      
+</div>

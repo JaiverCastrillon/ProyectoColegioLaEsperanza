@@ -1,0 +1,4 @@
+<div *ngFor="let pregunta of preguntas">
+  <input type="checkbox" id="myCheck" onclick="myFunction()" value={{pregunta.titulo}}> {{pregunta.titulo}}
+</div>
+<button style="position:absolute; left: 90%;" (click)="ObtenerCheck()" class="button1">Publicar</button>
